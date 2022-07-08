@@ -1,12 +1,19 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
+import LogIn from './components/login';
 import { StatusBar } from 'expo-status-bar';
+import { useState } from 'react';
 
 export default function App() {
+  const [name, setName] = useState("");
+
+
   return (
     <View style={styles.container}>
-      <Text>Uruguay nomá!</Text>
+      <Text style={styles.text}>Hola gente!</Text>
+      <Button title='Add' onPress={() => { }} />
       <StatusBar style="auto" />
+      <LogIn />
     </View>
   );
 }
@@ -14,8 +21,13 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'black',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text: {
+    color: 'white'
+  },
+
+
 });
