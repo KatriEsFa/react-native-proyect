@@ -31,7 +31,7 @@ const ToDoList = (arrayItmes) => {
                 <Text> To Do List : </Text>
                 {arrayItmes.length > 0
                     ? arrayItmes.map(item => <Item value={item.value} deleteFunction={deleteFunction} completedFunction={completedFunction} />)
-                    : createFirstItem()
+                    : createtItem()
                 }
             </View>
             <View style={styles.completedFath}>
