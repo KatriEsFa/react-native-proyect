@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
         padding: 10,
         height: 40,
         margin: 12,
+        color: 'white',
         //styles del input
     }
 })
